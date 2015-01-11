@@ -48,9 +48,9 @@ function [X, fX, i] = fmincg(f, X, options, P1, P2, P3, P4, P5)
 %
 % [Elijas] Changes Made:
 % 1) Output display
-% 2) Hidden an irrelevant warning
 
-warning('off', 'Octave:possible-matlab-short-circuit-operator');
+%%Doesn't seem to work
+%warning('off', 'Octave:possible-matlab-short-circuit-operator');
 
 % Read options
 if exist('options', 'var') && ~isempty(options) && isfield(options, 'MaxIter')
